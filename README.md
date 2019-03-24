@@ -3,13 +3,13 @@
 - README file created on 24.03.2019
 
 ### Project Title
-Explore US Bikshare Data
+_Explore US Bikshare Data_
 
 
 ### Description
 The project is about to crate a python program to analyze US Bikeshare data and to display respective statistics.
 
-The program runs as described:
+*The program runs as described:*
 1. Asks for the city filter
 2. Asks for month, day filter
 3. Load data based on filter
@@ -20,16 +20,16 @@ The program runs as described:
   * user statistics
 
 ### Files used
-Below data is used for analysis:
+*Below data is used for analysis:*
 - chicago.csv
 - washington.csv
 - new_york_city.csv
 
-Py file of script:
+*Py file of script:*
 - bikeshare_TSU.py
 
 ### Required software
-Following software is needed to run code
+*Following software is needed to run code:*
 - Terminal or Jupyter Notebook
 
 ### Credits
