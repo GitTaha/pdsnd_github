@@ -28,5 +28,9 @@ Below data is used for analysis:
 Py file of script:
 - bikeshare_TSU.py
 
+### Required software
+Following software is needed to run code
+- Terminal or Jupyter Notebook
+
 ### Credits
 Project is created within the scope of the Udacity program "Programming for Data Science"
