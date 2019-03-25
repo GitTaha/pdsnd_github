@@ -95,6 +95,7 @@ def get_filters():
         else:
             print('\nYou entered an invalid value!')
 
+    # display information about for which city, month and day filter the dataframe is loading
     if filter == 'none':
         print('\nDataFrame is loading for {} and without filter for month and day.'.format(city.title()))
     elif filter == 'month':
@@ -152,7 +153,7 @@ def time_stats(df, filter):
     print('\nCalculating The Most Frequent Times of Travel for ...\n')
     start_time = time.time()
 
-    # display the most common month, the most common day of week and the most common start hour
+    # display the most common month, the most common day of week and the most common start hour, based on the filter applied before
     if filter == 'none':
         print('Time statistics for filter selection: ', 'none\n')
         time_stat = pd.Series(data = [df['month'].mode()[0], df['day of week'].mode()[0], df['hour'].mode()[0]], index = ['Most common month:', 'Most common day:', 'Most common hour:'])
