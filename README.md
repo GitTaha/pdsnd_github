@@ -32,5 +32,8 @@ The project is about to crate a python program to analyze US Bikeshare data and 
 *Following software is needed to run code:*
 - Terminal or Jupyter Notebook
 
+### Code Specification
+- descriptive line comments must be included for each seperate functionality
+
 ### Credits
 Project is created within the scope of the Udacity program "Programming for Data Science"
