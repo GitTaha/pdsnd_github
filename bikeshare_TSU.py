@@ -82,7 +82,7 @@ def get_filters():
                 break
             else:
                 print('\Please enter your final decision')
-            
+
     while True:
         if filter == 'none':
             month, day = 'all', 'all'
@@ -92,6 +92,8 @@ def get_filters():
             day = input('\nWhich day would you like to analyze? (Enter monday, tuesday, ...) ')
             if month in months and day in days:
                 break
+            else:
+                print(month, 'or', day, 'does not exist')
         elif filter == 'month':
             day = 'all'
             month = input('\nWhich month would you like to analyze? (Enter january, february, ...) ')
