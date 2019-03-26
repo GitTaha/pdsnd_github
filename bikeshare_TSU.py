@@ -68,8 +68,22 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     # get user input for day of week (all, monday, tuesday, ... sunday)
+
+    input_check = ['month', 'day', 'both', 'none']
+
     while True:
         filter = input('\nWould you like to filter by month, day, both or none? ')
+        if filter not in input_check:
+            print('\nYou entered an invalid value!')
+        else:
+            filter_recheck = input('\nIf you are sure press "enter" or "no"? ')
+            if filter_recheck == '':
+                return filter
+                break
+            else:
+                print('\Please enter your final decision')
+
+    while True:
         if filter == 'none':
             month, day = 'all', 'all'
             break
@@ -78,6 +92,8 @@ def get_filters():
             day = input('\nWhich day would you like to analyze? (Enter monday, tuesday, ...) ')
             if month in months and day in days:
                 break
+            else:
+                print(month, 'or', day, 'does not exist')
         elif filter == 'month':
             day = 'all'
             month = input('\nWhich month would you like to analyze? (Enter january, february, ...) ')
@@ -92,8 +108,7 @@ def get_filters():
                 break
             else:
                 print(day, 'does not exist')
-        else:
-            print('\nYou entered an invalid value!')
+
 
     # display information about for which city, month and day filter the dataframe is loading
     if filter == 'none':
